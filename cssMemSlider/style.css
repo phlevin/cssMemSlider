@@ -75,7 +75,7 @@ time, mark, audio, video {
 
 * {
   box-sizing: border-box;
-  scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-color: transparent transparent; 
   scrollbar-width: 0px;
 }
 
@@ -96,13 +96,11 @@ time, mark, audio, video {
   -ms-overflow-style: none;
 }
 
-ol li {
+ol, li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
-li:only-of-type { list-style-type: none; }
 
 .carousel {
   position: relative;
@@ -123,12 +121,6 @@ li:only-of-type { list-style-type: none; }
   counter-reset: item;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  /* font-size: 0px; */
-
-}
-
-.carousel__viewport ol {
-  list-style-type: none;
 }
 
 .carousel__slide {
@@ -271,37 +263,36 @@ h1:hover {
 
 .meme_text {
   color:#FF1177;
-  /* font-size: 1em !important; */
 }
 
 
-/*glow for webkit*/
-/* @-webkit-keyframes neon1 {
+
+@-webkit-keyframes neon1 {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
   }
   to {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
   }
-} */
-/*glow for mozilla*/
-/* @-moz-keyframes neon1 {
+}
+
+@-moz-keyframes neon1 {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
   }
   to {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
   }
-} */
-/*glow*/
-/* @keyframes neon1 {
+}
+
+@keyframes neon1 {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
   }
   to {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
   }
-} */
+}
 
 @media (hover: hover) {
   .carousel__snapper {
